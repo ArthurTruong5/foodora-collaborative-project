@@ -13,6 +13,7 @@
             <li class="nav-item active">
                <% if user_signed_in? %>
 					<li class="mx-4 btn btn-outline-light"><%= link_to('My Account', edit_user_registration_path)%></li>
+          <li class="mx-4 btn btn-outline-light"><%= link_to('Register Your Restaurant', new_restaurant_path)%></li>
 					<li class="btn btn-outline-light"><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
 				<% else %>
 					<li class="btn btn-outline-light"><%= link_to('Sign in', new_user_session_path) %></li>
